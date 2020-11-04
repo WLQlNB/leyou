@@ -21,8 +21,5 @@ eureka:
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
 
-zuul:
-  prefix: /api # 添加路由前缀
-  retryable: true
-  routes:
-    item-service: /item/** # 将商品微服务映射到/item/**
+mybatis:
+  type-aliases-package: club.wlqzz.pojo
